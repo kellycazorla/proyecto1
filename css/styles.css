@@ -1,0 +1,216 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2? family= Lato & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+/* Importar aquí la font */
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Para que el scrolleo en la one page sea suave */
+  scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+  color: #0f0f0f;
+}
+p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 28px;
+  color: #0f0f0f;
+}
+button {
+  font-size: 20px;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+
+.info {
+  text-align: center;
+}
+
+/*-----*/
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  height: 90px;
+  width: 100%;
+  background-color: #fbfbfb;
+}
+
+.container img {
+  padding: 0%;
+  margin: 0%;
+  height: 90px;
+  width: 120px;
+  border-radius: 0%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #fbfbfb;
+  height: 90px;
+}
+
+.container a {
+  display: flex;
+  padding: 40px 40px;
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+  height: 90px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inicio {
+  min-height: 100vh;
+}
+
+#inicio img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+  padding-top: 20px;
+  margin: 20px;
+}
+
+.info p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0f0f0f;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #af599e;
+  color: #fbfbfb;
+  border-style: none;
+  cursor: pointer;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  min-height: 100vh;
+}
+
+.hablemos {
+  background-color: rgba(175, 89, 158, 0.3);
+  border-radius: 10px;
+  color: #0f0f0f;
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 120px;
+}
+
+.hablemos p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0f0f0f;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+.redes img {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+footer {
+  height: 90px;
+  background-color: #af599e;
+  color: #fbfbfb;
+  font: size 12px;
+  padding-top: 40px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
